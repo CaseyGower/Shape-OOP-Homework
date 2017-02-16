@@ -31,15 +31,22 @@ namespace Shape_OOP_Homework
             }
         }
 
-        public Triangle (double side1, double side2, double side3, int x=0, int y = 0)
+        public Triangle (double side1, double side2, double side3, int x=0, int y = 0): base (x,y)
         {
             Side1 = side1;
             Side2 = side2;
             Side3 = side3;
-            
-            //Initilize Center Position  
+
+            //Initilize Center Position 
+           // Center = new Position(x,y);
+           // Called in Base
+             
         }
 
-        
+        public override string ToString()
+        {
+            return $"Sides: {Side1}, {Side2}, {Side3}; Center: {Center}";
+        }
+
     }
 }

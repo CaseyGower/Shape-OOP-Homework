@@ -30,7 +30,7 @@ namespace Shape_OOP_Homework
             { return Side3; }
         }
 
-        public RightTriangle ( double b, double h):base(b,h, 0)
+        public RightTriangle ( double b, double h, int x=0, int y=0):base(b,h, 0, x,y)
         {
             Base = b;
             Height = h;

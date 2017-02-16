@@ -16,6 +16,11 @@ namespace Shape_OOP_Homework
             this.x = x;
             this.y = y;        
          }
+
+        public override string ToString()
+        {
+            return $"({x}, {y})";
+        }
     }
     abstract class Shape
     {
