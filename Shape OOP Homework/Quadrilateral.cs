@@ -14,7 +14,7 @@ namespace Shape_OOP_Homework
         public double Side3 { get; set; }
         public double Side4 { get; set; }
 
-       public Quadrilateral (int x = 0, int y = 0)
+       public Quadrilateral (int x = 0, int y = 0): base(x,y)
         {
 
 
@@ -31,8 +31,13 @@ namespace Shape_OOP_Homework
         {
             get
             {
-                throw new NotImplementedException();
+                return (Side1 + Side2 + Side3 + Side4);
             }
+        }
+
+        public override string ToString()
+        {
+            return $"Sides: {Side1}, {Side2}, {Side3}, {Side4}; Center: {Center}";
         }
     }
 }

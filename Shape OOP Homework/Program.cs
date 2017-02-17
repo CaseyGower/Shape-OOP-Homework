@@ -11,11 +11,32 @@ namespace Shape_OOP_Homework
         static int NumberOfIncorrectChecks = 0;
         static void Main(string[] args)
         {
+            Console.WriteLine("Triangle: ");
             TestTriangle();
 
             Console.WriteLine();
 
             Console.WriteLine($"Number of incorrect checks: {NumberOfIncorrectChecks}");
+            Console.WriteLine();
+
+            Console.WriteLine("Rectangle: ");
+            TestRectangle();
+            Console.WriteLine();
+
+            Console.WriteLine("Square: ");
+            TestSquare();
+            Console.WriteLine();
+
+            Console.WriteLine("Trapazoid: ");
+            TestTrapazoid();
+            Console.WriteLine();
+
+            Console.WriteLine("Circle: ");
+            TestCircle();
+            Console.WriteLine();
+
+            Console.WriteLine("Regular Hexagon: ");
+            TestHexagon();
 
             Console.ReadKey();
         }
@@ -52,5 +73,50 @@ namespace Shape_OOP_Homework
 
            
         }
+
+        static void TestRectangle()
+        {
+            Rectangle r = new Rectangle(3, 4);
+            Console.WriteLine(r);
+            Console.WriteLine(r.Area);
+            Console.WriteLine(r.Perimeter);
+            Console.WriteLine();
+        }
+
+        static void TestSquare()
+        {
+            Square s = new Square(3);
+            Console.WriteLine(s);
+            Console.WriteLine(s.Area);
+            Console.WriteLine(s.Perimeter);
+            Console.WriteLine();
+        }
+
+        static void TestTrapazoid()
+        {
+            IsoscelesTrapezoid r = new IsoscelesTrapezoid(3, 4, 2);
+            Console.WriteLine(r);
+            Console.WriteLine(r.Area);
+            Console.WriteLine(r.Perimeter);
+            Console.WriteLine();
+        }
+
+        static void TestCircle()
+        {
+            Circle c = new Circle(3);
+            Console.WriteLine(c);
+            Console.WriteLine(c.Area);
+            Console.WriteLine(c.Perimeter);
+            Console.WriteLine();
+        }
+
+        static void TestHexagon()
+        {
+            RegularHexagon h = new RegularHexagon(2);
+            Console.WriteLine(h);
+            Console.WriteLine(h.Area);
+            Console.WriteLine(h.Perimeter);
+        }
+
     }
 }
